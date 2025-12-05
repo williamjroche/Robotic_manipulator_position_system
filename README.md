@@ -1,7 +1,7 @@
 # Robotic Manipulator Position System
 Program that solves for the angles needed to move a robotic manipulator to a certain position. Uses forward kinematics and inverse kinematics based on a 4 DOF robot. Forward Kinematics is computed using Denavit Hartenberg method of finding link parameters. Inverse Kinematics (IK) is computed using the Levemberg-Marquadt Numerical method. This is a project I am doing to be used in a robotics projects as the main method for finding motor angle values for a given position.
 
-Algebraic solver breakdown:
+## Algebraic solver breakdown:
 
 - input Link parameters and final position manipulator needs to be at
 - get DH table
@@ -13,7 +13,7 @@ Algebraic solver breakdown:
 - phi = theta1 + theta2 + theta3. Use this to solve for theta3
 - write joint angles to motors
 
-Numerical solver breakdown:
+## Numerical solver breakdown:
 
 Note: This program is written in a jupyter notebook which ran in a miniconda environment for the roboticstoolbox library
 - This is a much more simple approach because the roboticstoolbox library computes the math for us
@@ -23,7 +23,7 @@ Note: This program is written in a jupyter notebook which ran in a miniconda env
 - joint angle speed control
 - write joint angles to motors
 
-Test video (not full robotic manipulator):
+### Test video (not full robotic manipulator):
 https://youtube.com/shorts/shDkVHSkrxc?feature=share
 
 *This is a work in progress*
